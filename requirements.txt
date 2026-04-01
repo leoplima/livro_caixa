@@ -1,3 +1,6 @@
+# Python Dependencies for Livro Caixa da Igreja
+# Streamlit Cloud uses Python 3.11 by default
+
 streamlit==1.31.1
 pandas==2.1.4
 plotly==5.18.0

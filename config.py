@@ -26,10 +26,19 @@ HASH_ALGORITHM = "sha256"
 SECRET_KEY = "sua_chave_secreta_muito_segura_aqui_123456"
 
 # Configurações de email (para notificações)
+# Usando secrets do Streamlit para credenciais seguras
+import streamlit as st
+
 SMTP_SERVER = "smtp.gmail.com"
 SMTP_PORT = 587
-SENDER_EMAIL = "seu_email@gmail.com"
-SENDER_PASSWORD = "sua_senha_de_app"
+
+# Carrega credenciais dos secrets (local: .streamlit/secrets.toml, cloud: configuração web)
+try:
+    SENDER_EMAIL = st.secrets.get("SENDER_EMAIL", "seu_email@gmail.com")
+    SENDER_PASSWORD = st.secrets.get("SENDER_PASSWORD", "sua_senha_de_app")
+except:
+    SENDER_EMAIL = "seu_email@gmail.com"
+    SENDER_PASSWORD = "sua_senha_de_app"
 
 # Categorias de receita padrão
 CATEGORIAS_RECEITA = [

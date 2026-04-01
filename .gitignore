@@ -16,6 +16,9 @@ uploads/
 config_local.py
 secrets.txt
 
+# Streamlit Secrets (NUNCA fazer push!)
+.streamlit/secrets.toml
+
 # Cache Python
 __pycache__/
 *.py[cod]
