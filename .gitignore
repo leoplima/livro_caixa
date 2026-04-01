@@ -1,0 +1,64 @@
+# 🔐 SEGURANÇA - Não fazer upload de dados sensíveis
+
+# Database com dados reais
+livro_caixa.db
+*.db
+
+# Imagens/logos das igrejas (dados privados)
+uploads/
+
+# Variáveis de ambiente com senhas
+.env
+.env.local
+.env.*.local
+
+# Credentials e tokens
+config_local.py
+secrets.txt
+
+# Cache Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Ambientes virtuais
+venv/
+env/
+ENV/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Streamlit
+.streamlit/secrets.toml
+.streamlit/config.toml
+
+# Logs
+*.log
+
+# Arquivos temporários
+*.tmp
+*.temp
+.cache/

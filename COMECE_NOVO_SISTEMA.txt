@@ -1,0 +1,341 @@
+# 🎉 NOVO SISTEMA PRONTO - Multi-Igreja com Interface Moderna!
+
+## ✨ O Que Mudou
+
+Seu sistema **Livro Caixa** foi completamente renovado!
+
+### 🚀 Principais Atualizações:
+
+1. **Multi-Tenancy (Múltiplas Igrejas)**
+   - Gerenciar quantas igrejas quiser
+   - Cada usuário só vê suas igrejas
+   - Dados completamente isolados
+
+2. **Marca D'água Dinâmica**
+   - Cada igreja tem seu próprio logo
+   - Muda automaticamente ao trocar de igreja
+   - Suporte completo a PNG e JPG
+
+3. **Interface 100% Responsiva**
+   - Perfeita em celulares (mobile-first)
+   - Adapta-se a tablets e desktops
+   - Toque otimizado para móvel
+
+4. **Novo Design Moderno**
+   - Cores vibrantes: Roxo, Ciano, Pink
+   - Animações fluidas (slide in, fade in, hover effects)
+   - Botões e cards com efeitos modernos
+   - Fonte elegante: Plus Jakarta Sans
+
+## 📋 Dados Já Configurados
+
+### 🏛️ **IGREJAS**
+
+| Nome | ID | CNPJ |
+|------|----|----|
+| Igreja Central | 1 | 12.345.678/0001-90 |
+| Igreja Filial | 2 | 12.345.678/0001-91 |
+
+### 👤 **USUÁRIOS**
+
+| Email | Senha | Nível | Acesso |
+|-------|-------|-------|--------|
+| **admin@igreja.com** | Admin123456 | Admin | ✅ Todas as igrejas |
+| **tesoureiro@gmail.com** | Tesoureiro123 | Editor | ✅ Igreja Central |
+| **viewer@gmail.com** | Viewer123 | Viewer | ✅ Igreja Filial |
+
+## 🚀 Como Começar
+
+### 1️⃣ Iniciar a Aplicação
+
+```bash
+streamlit run app.py
+```
+
+Ou clique em `iniciar.bat`
+
+### 2️⃣ Acessar no Navegador
+
+```
+http://localhost:8501
+```
+
+### 3️⃣ Fazer Login
+
+Escolha um dos usuários acima e entre!
+
+```
+Email:    admin@igreja.com
+Senha:    Admin123456
+```
+
+## 🎨 Novos Recursos Visuais
+
+### Dashboard
+- ✅ Seletor de Igreja no topo
+- ✅ Gráficos com nova paleta de cores
+- ✅ Cards com efeito hover
+- ✅ Animações de entrada suaves
+
+### Botões
+- ✅ Gradiente colorido
+- ✅ Efeito sombra dinâmica
+- ✅ Lift animation ao passar o mouse
+- ✅ Transições suaves
+
+### Inputs
+- ✅ Fundo escuro elegante
+- ✅ Borda com foco colorido
+- ✅ Placeholders descritivos
+- ✅ Transição suave
+
+### Mobile
+- ✅ 100% Responsivo
+- ✅ Touchscreen otimizado
+- ✅ Menu adaptativo
+- ✅ Cards empilhados
+
+## 📱 Testar em Celular
+
+### Via Rede Local
+
+1. Pegue o IP do computador:
+```bash
+ipconfig
+```
+
+2. No celular, acesse:
+```
+http://SEU_IP:8501
+```
+
+### ExempLo:
+```
+http://192.168.1.100:8501
+```
+
+## 🏛️ Adicionar Marca D'água
+
+### Como Fazer:
+
+1. Fazer login como **admin@igreja.com**
+2. Menu → **🏛️ Igrejas**
+3. Clique em **➕ Nova Igreja**
+4. Preencha os dados
+5. Faça upload da imagem (logo da sua igreja)
+6. Clique **✅ Criar Igreja**
+
+### Resultado:
+- A imagem aparecerá como fundo semi-transparente
+- Muda automaticamente ao trocar de igreja
+- Fica elegante sem prejudicar a leitura
+
+## 👥 Adicionar Novo Usuário
+
+### Como Fazer:
+
+1. Login como **admin@igreja.com**
+2. Menu → **👥 Usuários**
+3. Aba **📧 Convidar**
+4. Preencha:
+   - Email: `novo@usuario.com`
+   - Nome: `João Silva`
+   - Nível: `Editor` (pode criar transações)
+5. Clique **📧 Enviar Convite**
+
+### Resultado:
+- Usuário recebe credenciais
+- Pode acessar apenas as igrejas atribuídas
+- Nível de acesso controlado pelo admin
+
+## 🎯 Exemplo de Uso Completo
+
+### Admin
+```
+1. Login: admin@igreja.com / Admin123456
+2. Vê as 2 igrejas já criadas
+3. Pode criar mais igrejas
+4. Pode gerenciar todos os usuários
+5. Pode criar transações em qualquer igreja
+```
+
+### Tesoureiro
+```
+1. Login: tesoureiro@gmail.com / Tesoureiro123
+2. Vê APENAS Igreja Central
+3. Pode criar/editar transações
+4. Pode ver dashboard
+5. Não pode criar igrejas
+```
+
+### Visualizador
+```
+1. Login: viewer@gmail.com / Viewer123
+2. Vê APENAS Igreja Filial
+3. Pode VER tudo
+4. NÃO pode criar/editar
+5. Acesso somente leitura
+```
+
+## 🔐 Segurança
+
+- ✅ Senhas com hash SHA256
+- ✅ Validação de email
+- ✅ Controle de permissões por usuário
+- ✅ Isolamento de dados por igreja
+- ✅ Log de auditoria completo
+
+## 🌙 Cores Modernas
+
+| Nome | Usar em… |
+|------|----------|
+| 🟣 Roxo (#7C3AED) | Principal, botões |
+| 🟦 Ciano (#06B6D4) | Secundário, destaques |
+| 🟥 Vermelho (#EF4444) | Despesas, alertas |
+| 🟩 Verde (#10B981) | Receitas, sucesso |
+| 🟧 Laranja (#F59E0B) | Avisos, atenção |
+| 🔴 Pink (#FF006E) | Accent, destaque |
+
+## 🧬 Estrutura de Banco
+
+### NOVO - Tabela: igrejas
+```
+id, nome, cnpj, endereco, 
+telefone, email, logo_path, 
+marca_agua_path, cor_primaria
+```
+
+### NOVO - Tabela: usuario_igrejas
+```
+usuario_id, igreja_id, access_level
+(controla permissões por igreja)
+```
+
+### MODIFICADE - Transações
+```
++ igreja_id (qual igreja pertence)
+```
+
+## 📊 Transições Implementadas
+
+### Page Load
+```css
+animation: slideIn 0.6s ease-out;
+```
+
+### Buttons Hover
+```css
+transform: translateY(-2px);
+box-shadow: 0 12px 24px rgba(...);
+```
+
+### Cards on Hover
+```css
+transform: translateY(-5px);
+border-left-color: accent;
+```
+
+### Input Focus
+```css
+box-shadow: 0 0 0 3px rgba(..., 0.1);
+border-color: primary;
+```
+
+## ⚙️ Configuração Avançada
+
+### Mudar Cores Primárias
+
+Abra `config.py` e procure por `COLORS`:
+
+```python
+COLORS = {
+    "primary": "#7C3AED",      # Mude aqui
+    "secondary": "#06B6D4",    # Ou aqui
+    # ... resto
+}
+```
+
+### Adicionar Categoria
+
+Em `config.py`:
+
+```python
+CATEGORIAS_RECEITA = [
+    "Seu Nova Categoria",  # ← Adicione
+    # ...
+]
+```
+
+## 🐛 Se Algo Não Funcionar
+
+### Porta em uso?
+```bash
+streamlit run app.py --server.port 8502
+```
+
+### Erro de módulo?
+```bash
+pip install -r requirements.txt
+```
+
+### Resetar tudo?
+```bash
+del livro_caixa.db
+python init_v2.py
+streamlit run app.py
+```
+
+## 📚 Documentação
+
+- **ATUALIZACAO_V2.md** - Guia completo de atualização
+- **README.md** - Documentação original
+- **ARQUITETURA.md** - Estrutura técnica
+
+## ✅ Checklist - Primeiro Acesso
+
+- [ ] Iniciar com `streamlit run app.py`
+- [ ] Page abriu em http://localhost:8501?
+- [ ] Login funcionou?
+- [ ] Vê as 2 igrejas criadas?
+- [ ] Dashboard está bonito com cores vibrantes?
+- [ ] Botões têm efeito hover?
+- [ ] Cards se elevam ao passar o mouse?
+- [ ] Interface funciona bem no celular?
+- [ ] Transações aparecem no gráfico?
+
+## 🎉 Próximas Features
+
+- [ ] Exportar PDF de relatórios
+- [ ] Integração com métodos de pagamento
+- [ ] Autenticação 2FA
+- [ ] Backup automático na nuvem
+- [ ] Notificações por email
+- [ ] API REST para integração
+- [ ] App mobile nativa
+- [ ] Previsões com IA
+
+## 💡 Dicas
+
+1. **Mobile First**: Abra em um celular para testar responsividade
+2. **Marca d'água**: Use seu logo em PNG transparente para melhor resultado
+3. **Cores Personalizadas**: Cada igreja pode ter sua cor primária
+4. **Permissões**: Admin controla tudo, editor cria dados, viewer só lê
+5. **Isolamento**: Dados de uma igreja NUNCA aparecem em outra
+
+## 🚀 Commence Agora!
+
+```bash
+streamlit run app.py
+```
+
+Abra em: **http://localhost:8501**
+
+Login:
+- Email: `admin@igreja.com`
+- Apenas a senha: `Admin123456`
+
+---
+
+**Seu novo sistema está pronto para revolucionar a gestão da sua igreja! 🙏💰**
+
+Desenvolvido com ❤️ para igrejas
