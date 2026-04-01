@@ -1,8 +1,8 @@
 # 🔐 SEGURANÇA - Não fazer upload de dados sensíveis
 
 # Database com dados reais
-livro_caixa.db
-*.db
+#livro_caixa.db
+#*.db
 
 # Imagens/logos das igrejas (dados privados)
 uploads/
