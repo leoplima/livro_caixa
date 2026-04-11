@@ -65,3 +65,6 @@ wheels/
 *.tmp
 *.temp
 .cache/
+
+# Banco de dados
+*.db
