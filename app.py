@@ -25,7 +25,7 @@ secondary_rgb_str = f"{secondary_rgb[0]}, {secondary_rgb[1]}, {secondary_rgb[2]}
 
 # Configuração da página
 st.set_page_config(
-    page_title="Livro Caixa - Igreja",
+    page_title="IEADME - Livro Caixa - Igreja",
     page_icon="💰",
     layout="wide",
     initial_sidebar_state="expanded"
@@ -764,9 +764,9 @@ def tela_login():
     with col2:
         st.markdown("""
             <div style='text-align: center; animation: slideIn 0.8s ease-out;'>
-                <h1 style='font-size: 48px; margin-bottom: 10px;'>💰 Livro Caixa</h1>
+                <h1 style='font-size: 48px; margin-bottom: 10px;'>💰 IEADME - Livro Caixa</h1>
                 <p style='font-size: 18px; color: #94A3B8; margin-bottom: 40px;'>
-                    Gestão Financeira Inteligente para Igrejas
+                    Gestão Financeira
                 </p>
             </div>
         """, unsafe_allow_html=True)
