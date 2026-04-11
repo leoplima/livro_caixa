@@ -1,7 +1,7 @@
 # Python Dependencies for Livro Caixa da Igreja
-# Versões com suporte a Python 3.12+
+# Versões estáveis e comprovadas para Streamlit Cloud
 
-streamlit>=1.31.1
-pandas>=2.2.0
-plotly>=5.18.0
-openpyxl>=3.11.0
+streamlit==1.31.1
+pandas==2.2.3
+plotly==5.18.0
+openpyxl==3.11.0
